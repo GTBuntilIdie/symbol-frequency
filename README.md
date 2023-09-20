@@ -16,4 +16,24 @@ ___
 
 # Для запуска сервиса необходимо выполнить следующую команду:
 
+### java -jar symbol_frequency.jar
+
+API будет запущен на порту 8080.
+
+# Получение частоты встречи символов в заданной строке URL
+
+#### GET /symbol_frequency
+
+Параметры запроса - input (обязательный) - строка для анализа.
+
+## пример запроса 
+
+GET-запрос:
+
+### http://localhost:8080/symbol_frequency?input=aaaaabcccc 
+
+## ответ 
+
+### [{"character":"a","count":5},{"character":"c","count":4},{"character":"b","count":1}]
+
 
